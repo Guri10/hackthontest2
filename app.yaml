@@ -1,2 +1,7 @@
 runtime: python39
 instance_class: F1
+
+flask:
+  SECRET_KEY: "b'\xcfvD\\\x01\xca\xf3\x04U\x17\xb8b\x9f[\xfe\xb3y\xee} \xca_\xa8o'"
+  DEBUG: True
+  TESTING: False
