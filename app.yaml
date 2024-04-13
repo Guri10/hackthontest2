@@ -1,4 +1,4 @@
-runtime: python39  # Specify the Python runtime
+runtime: python310  # Specify the Python runtime
 entrypoint: gunicorn -b :$PORT app:app  # Command to start your app
 
 env: standard  # Use the standard environment
