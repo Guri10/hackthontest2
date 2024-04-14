@@ -5,10 +5,10 @@ env: standard  # Use the standard environment
 instance_class: F1  # Choose the instance class that suits your needs
 
 automatic_scaling:
-  min_idle_instances: auto  # GCP will decide the minimum number of instances based on the incoming traffic
-  max_idle_instances: auto  # GCP will decide the maximum number of instances based on the incoming traffic
-  min_pending_latency: auto  # Minimum amount of time a request should wait in the pending queue before the instance is scaled
-  max_pending_latency: auto  # Maximum amount of time a request is allowed to wait before the instance is scaled
+  min_idle_instances: automatic  # GCP will decide the minimum number of instances based on the incoming traffic
+  max_idle_instances: automatic  # GCP will decide the maximum number of instances based on the incoming traffic
+  min_pending_latency: automatic  # Minimum amount of time a request should wait in the pending queue before the instance is scaled
+  max_pending_latency: automatic  # Maximum amount of time a request is allowed to wait before the instance is scaled
   target_cpu_utilization: 0.65  # Target CPU utilization for scaling
 
 handlers:
